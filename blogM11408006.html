@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宇宙最強搬運工！《皮克敏》當多利美學 - Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pikmin: {
+                            red: '#FF4D4D',
+                            yellow: '#FFD93D',
+                            blue: '#4D96FF',
+                            purple: '#9B51E0',
+                            white: '#F8F9FA',
+                            dark: '#121212',
+                            accent: '#6BCB77'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #FF4D4D, #FFD93D, #4D96FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+        .bento-item {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bento-item:hover {
+            transform: translateY(-5px) scale(1.02);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .media-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 24px;
+        }
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            margin: 4rem 0;
+        }
+        ::selection {
+            background: #6BCB77;
+            color: #000;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Progress Bar -->
+    <div class="fixed top-0 left-0 w-full h-1 bg-pikmin-dark z-50">
+        <div id="progress" class="h-full bg-gradient-to-r from-pikmin-red via-pikmin-yellow to-pikmin-blue w-0 transition-all duration-150"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex flex-col items-center justify-center px-6 py-20 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-pikmin-red/10 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-pikmin-blue/10 blur-[120px] rounded-full"></div>
+
+        <div class="max-w-6xl w-full z-10">
+            <div class="mb-8 flex flex-wrap gap-3 animate-fade-in">
+                <span class="px-4 py-1.5 rounded-full bg-pikmin-red/20 text-pikmin-red text-sm font-bold tracking-wider border border-pikmin-red/30">GAME DESIGN</span>
+                <span class="px-4 py-1.5 rounded-full bg-pikmin-accent/20 text-pikmin-accent text-sm font-bold tracking-wider border border-pikmin-accent/30">DANDORI</span>
+                <span class="px-4 py-1.5 rounded-full bg-pikmin-blue/20 text-pikmin-blue text-sm font-bold tracking-wider border border-pikmin-blue/30">NINTENDO</span>
+            </div>
+
+            <h1 class="text-5xl md:text-8xl font-display font-black leading-tight mb-8">
+                宇宙最強搬運工！<br/>
+                <span class="text-gradient">《皮克敏》</span>：<br/>
+                <span class="text-white/90">當多利美學</span>
+            </h1>
+
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-pikmin-red to-pikmin-yellow flex items-center justify-center font-bold text-black">M</div>
+                <div>
+                    <p class="text-white font-bold">M11408006</p>
+                    <p class="text-white/50 text-sm italic">Strategy & Design Analyst</p>
+                </div>
+            </div>
+
+            <!-- Generated Banner Integration -->
+            <div class="media-container w-full aspect-[21/9] rounded-3xl overflow-hidden shadow-2xl border border-white/10 relative group">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                <img src='https://opal.google/board/blobs/9e6c4299-ee81-46e0-a09a-34444b2a22d5' alt='Pikmin and Oatchi Tandori Illustration' class="transition-transform duration-700 group-hover:scale-105" />
+                <div class="absolute bottom-6 left-8 z-20 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                    <p class="text-white/80 text-sm font-medium bg-black/40 backdrop-blur-md px-4 py-2 rounded-full">復古感插畫：皮克敏與救援犬歐慶協作</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 pb-32">
+        
+        <!-- Intro Section -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start mb-24">
+            <div class="md:col-span-5 sticky top-24">
+                <h2 class="text-3xl font-display font-bold text-pikmin-red mb-6 flex items-center gap-3">
+                    <span class="w-8 h-px bg-pikmin-red"></span>
+                    前言
+                </h2>
+                <p class="text-2xl font-light leading-relaxed text-white/80">
+                    如果你在某個荒廢的行星墜機，迎接你的不是黏糊糊的異形，而是一群長得像發芽胡蘿蔔的彩色小生物...
+                </p>
+            </div>
+            <div class="md:col-span-7 space-y-6 text-lg text-white/60 leading-loose">
+                <p>
+                    歡迎來到「PNF-404」行星。在這裡，我們這位倒楣的太空人歐利瑪隊長，意外開啟了他的星際求生實錄。但別被《皮克敏》（Pikmin）那軟萌的包裝給騙了，這絕對不是什麼讓小朋友塗鴉的簡單遊戲。
+                </p>
+                <div class="p-8 glass-card border-l-4 border-l-pikmin-yellow">
+                    <p class="text-white italic">「這款由任天堂大師宮本茂操刀的作品，本質上是一場結合了『即時戰略（RTS）』與『硬核益智』的深度腦力激盪。它告訴我們：可愛是表象，殘酷的效率管理才是它的靈魂。」</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid: The 101 -->
+        <section class="mb-32">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl font-display font-bold mb-2">皮克敏 101</h2>
+                    <p class="text-white/40">分工合作才是生存的唯一王道</p>
+                </div>
+                <div class="hidden md:block h-px flex-1 bg-white/10 mx-8 mb-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Red -->
+                <div class="bento-item glass-card p-8 group">
+                    <div class="w-12 h-12 bg-pikmin-red/20 rounded-xl flex items-center justify-center mb-6 text-pikmin-red group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29L5.21 21L12 18L18.79 21L19.5 20.29L12 2Z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">紅色皮克敏</h3>
+                    <p class="text-white/50 text-sm">抗火的熱血戰士，是戰鬥中的中堅力量。</p>
+                </div>
+                <!-- Yellow -->
+                <div class="bento-item glass-card p-8 group">
+                    <div class="w-12 h-12 bg-pikmin-yellow/20 rounded-xl flex items-center justify-center mb-6 text-pikmin-yellow group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M13 2L3 14H12V22L22 10H13V2Z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">黃色皮克敏</h3>
+                    <p class="text-white/50 text-sm">能導電且拋得更高，適合處理高處障礙。</p>
+                </div>
+                <!-- Blue -->
+                <div class="bento-item glass-card p-8 group">
+                    <div class="w-12 h-12 bg-pikmin-blue/20 rounded-xl flex items-center justify-center mb-6 text-pikmin-blue group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C12 2 6 8 6 12C6 15.31 8.69 18 12 18C15.31 18 18 15.31 18 12C18 8 12 2 12 2Z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">藍色皮克敏</h3>
+                    <p class="text-white/50 text-sm">天生的游泳健將，無視深水區域的威脅。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dandori Concept -->
+        <section class="mb-32 relative">
+            <div class="absolute -right-24 top-0 w-64 h-64 bg-pikmin-purple/10 blur-[100px] -z-10"></div>
+            <div class="glass-card p-12 overflow-hidden relative">
+                <div class="relative z-10 flex flex-col md:flex-row gap-12 items-center">
+                    <div class="md:w-1/2">
+                        <h2 class="text-6xl font-display font-black text-white mb-6">Dandori<br/><span class="text-pikmin-accent">當多利</span></h2>
+                        <p class="text-xl text-white/70 leading-relaxed">
+                            所謂的「當多利」，指的就是「策劃、統籌與優化流程」。為什麼玩家會像吃洋芋片一樣停不下來？因為這遊戲完美滿足了人類的秩序感。
+                        </p>
+                    </div>
+                    <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                        <div class="bg-white/5 p-6 rounded-2xl border border-white/5">
+                            <p class="text-3xl font-bold text-pikmin-accent mb-2">20</p>
+                            <p class="text-xs uppercase tracking-widest text-white/40">搬運果實</p>
+                        </div>
+                        <div class="bg-white/5 p-6 rounded-2xl border border-white/5">
+                            <p class="text-3xl font-bold text-pikmin-accent mb-2">30</p>
+                            <p class="text-xs uppercase tracking-widest text-white/40">破壞圍牆</p>
+                        </div>
+                        <div class="bg-white/5 p-6 rounded-2xl border border-white/5">
+                            <p class="text-3xl font-bold text-pikmin-accent mb-2">50</p>
+                            <p class="text-xs uppercase tracking-widest text-white/40">討伐怪物</p>
+                        </div>
+                        <div class="bg-pikmin-accent/20 p-6 rounded-2xl border border-pikmin-accent/30">
+                            <p class="text-3xl font-bold text-white mb-2">100%</p>
+                            <p class="text-xs uppercase tracking-widest text-white/60">效率達成</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- History & Dark Content -->
+        <section class="space-y-24">
+            <div class="flex flex-col md:flex-row gap-16">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6 text-white border-b border-white/10 pb-4">尋根溯源：庭院裡的啟示</h3>
+                    <p class="text-white/60 leading-loose">
+                        《皮克敏》的誕生，源於宮本茂某天在自家庭院看著螞蟻搬運食物，那種群體運作、前仆後繼的生物動態激發了他的靈感：如果我們能指揮一群生物呢？從 2001 年 GameCube 時代開始，這系列就帶著一種神祕的「生存壓力感」。
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6 text-pikmin-purple border-b border-pikmin-purple/20 pb-4">深度反差：黑暗童話</h3>
+                    <p class="text-white/60 leading-loose">
+                        當你指揮失誤，一群皮克敏被怪物一口吞掉，螢幕上會出現它們半透明的靈魂飄散，並伴隨著一聲極其淒涼的尖叫。那種靈魂深處的罪惡感，正是這款「黑暗童話」的魅力所在。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Opinion Split -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-8 bg-white/[0.02] rounded-3xl border border-white/5">
+                    <h4 class="text-pikmin-accent font-bold mb-4 uppercase tracking-tighter">● 新手福音</h4>
+                    <p class="text-white/50 text-sm">《皮克敏 4》引入了自動鎖定與「時間倒流」功能。對新手來說，這大大減輕了操作壓力，讓更多人能領略當多利的樂趣。</p>
+                </div>
+                <div class="p-8 bg-white/[0.02] rounded-3xl border border-white/5">
+                    <h4 class="text-pikmin-red font-bold mb-4 uppercase tracking-tighter">● 老粉心聲</h4>
+                    <p class="text-white/50 text-sm">核心玩家則擔心這會削弱遊戲的策略深度。如何在「親民」與「挑戰性」之間取得平衡，始終是社群熱議的話題。</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Future & AR -->
+        <section class="mb-32">
+            <div class="flex flex-col md:flex-row gap-12 items-center bg-gradient-to-br from-pikmin-accent/5 to-transparent p-12 rounded-[40px] border border-pikmin-accent/10">
+                <div class="md:w-2/3">
+                    <h3 class="text-3xl font-display font-bold mb-6">未來展望：佔領現實生活</h3>
+                    <p class="text-white/70 leading-relaxed mb-6">
+                        與 Niantic 合作的 AR 手遊 《Pikmin Bloom》，成功讓原本宅在家裡的玩家愛上散步。看著地圖上因為你的腳步而開滿鮮花，這種將遊戲與現實健康結合的嘗試，讓這群小傢伙在非玩家群體中也大受歡迎。
+                    </p>
+                    <div class="flex gap-4">
+                        <div class="px-6 py-3 bg-white text-black font-bold rounded-full text-sm cursor-pointer hover:bg-pikmin-accent transition-colors">探索 Pikmin Bloom</div>
+                        <div class="px-6 py-3 border border-white/20 text-white font-bold rounded-full text-sm cursor-pointer hover:bg-white/5 transition-colors">了解更多</div>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex justify-center">
+                    <div class="w-48 h-48 rounded-full border-4 border-pikmin-accent/30 flex items-center justify-center relative animate-pulse-slow">
+                         <div class="absolute inset-0 bg-pikmin-accent/10 rounded-full animate-ping"></div>
+                         <svg class="w-20 h-20 text-pikmin-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Call to Action -->
+        <section class="text-center py-20 glass-card bg-gradient-to-b from-white/5 to-transparent">
+            <h2 class="text-4xl md:text-5xl font-display font-black mb-8">你今天「當多利」了嗎？</h2>
+            <p class="text-white/60 max-w-2xl mx-auto mb-12 text-lg">
+                在這麼多種類中，你最喜歡哪種顏色的皮克敏？遇到強大的怪物時，你是傾向於「人海戰術拼命流」，還是計算精準的「智取策略流」呢？
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="px-10 py-4 bg-pikmin-red hover:bg-pikmin-red/80 text-white font-black rounded-2xl transition-all hover:scale-105 active:scale-95 shadow-xl shadow-pikmin-red/20">
+                    分享你的心得
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // Smooth scroll progress bar
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progress").style.width = scrolled + "%";
+        };
+
+        // Subtle animation for bento items on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('translate-y-10');
+                    entry.target.classList.remove('opacity-0');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.bento-item').forEach(el => {
+            el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
